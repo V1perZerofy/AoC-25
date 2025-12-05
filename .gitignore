@@ -1,0 +1,33 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.env
+.venv/
+venv/
+ENV/
+
+# --- AoC specific ---
+input.txt
+input*.txt
+inputs/
+data/
+
+# --- Editors & OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Logs & debug ---
+*.log
+
+# --- Build / cache ---
+.cache/
+.mypy_cache/
+.pytest_cache/
+
+# --- Misc ---
+*.tmp
+*.bak
