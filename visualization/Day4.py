@@ -1,7 +1,7 @@
 import time
 import sys
 
-with open("../input4.txt") as f:
+with open("../inputs/input4.txt") as f:
     grid = [list(i) for i in f.read().strip().split("\n")]
 
 DIRS = [
