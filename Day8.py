@@ -23,6 +23,7 @@ for l1 in range(len(lines)):
 all_distances = sorted(all_distances, key=lambda all_distances: all_distances[2])
 
 circuits = []
+last = None
 for i in all_distances:
     a, b, *_ = i
     i, j = None, None
@@ -63,9 +64,10 @@ res = 1
 print(len(circuits))
 print(len(circuits[0]))
 
-a, b = last
-x1, *m = a
-x2, *n = b
+if last:
+    a, b = last
+    x1, *m = a
+    x2, *n = b
 
-print(x1, x2)
-print(x1 * x2)
+    print(x1, x2)
+    print(x1 * x2)
